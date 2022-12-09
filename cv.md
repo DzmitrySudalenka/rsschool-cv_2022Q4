@@ -41,3 +41,9 @@
 - *2016* &emsp; **EPAM training center**, *Java*
 
 ---
+
+### Languages:
+
+- Russian - *Native*
+- English &nbsp;- *Basic*
+- Polish &nbsp;&nbsp; - *Intermediate*
