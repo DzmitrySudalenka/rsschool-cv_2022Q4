@@ -45,4 +45,11 @@ img {
 .nav-link {
   padding: 0 20px;
   line-height: 50px;
+  color: #1d262d;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.nav-link:hover {
+  color: #2867B2;
 }
