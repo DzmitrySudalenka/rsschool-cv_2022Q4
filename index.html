@@ -8,11 +8,227 @@
   <meta name="description" content="Dzmitry Sudalnka CV">
   <meta name="author" content="Dzmitry Sudalnka">
 
-  <link rel="stylesheet" href="styles.css?v=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=1.0">
+
+  <link rel="icon" href="images/favicon.ico">
 
 </head>
 
 <body>
+
+  <header class = "header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#summary">Summary</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#skills">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#code">Code</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#languages">Languages</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#employment">Employment</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#education">Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#courses">Courses</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class = "main">
+    <div class="container main__container">
+
+      <div class="col-left">
+        
+        <div class="photo__wrap">
+          <img class="photo" src="images/photo.jpg" width="300" height="300" alt="photo">
+        </div>
+
+        <section class="section" id="contacts">
+          <h2 class="section__title">Contacts</h2>
+          <div class="section__cont">
+            <ul>
+              <li class="contacts__item">
+                <i class="icon fa-solid fa-at"></i>
+                <a class="contacts__link" href="mailto:sudalneko@gmail">sudalneko@gmail.com</a>
+              </li>
+              <li class="contacts__item">
+                <i class="icon fa-solid fa-mobile-screen-button"></i>
+                <a class="contacts__link" href="tel:+375444774577">+375 (44) 477-45-77</a>
+              </li>
+              <li class="contacts__item">
+                <i class="icon fa-brands fa-telegram"></i>
+                <a class="contacts__link" href="https://t.me/sudalenko" target="_blank">@sudalenko</a>
+              </li>
+              <li class="contacts__item">
+                <i class="icon fa-brands fa-linkedin-in"></i>
+                <a class="contacts__link" href="https://www.linkedin.com/in/dzmitry-sudalenka/" target="_blank">linkedin.com/in/dzmitry-sudalenka</a>
+              </li>
+              <li class="contacts__item">
+                <i class="icon fa-brands fa-github"></i>
+                <a class="contacts__link" href="https://github.com/DzmitrySudalenka" target="_blank">github.com/DzmitrySudalenka</a>
+              </li>
+              <li class="contacts__item">
+                <i class="icon fa-solid fa-location-dot"></i>
+                Belarus, Gomel
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" id="skills">
+          <h2 class="section__title">Skills</h2>
+          <div class="section__cont">
+            <ul class="list">
+              <li class="list__item col-left__list-item">HTML5, CSS3</li>
+              <li class="list__item col-left__list-item">JavaScript Basics</li>
+              <li class="list__item col-left__list-item">PHP, CMS Wordpress</li>
+              <li class="list__item col-left__list-item">Git</li>
+              <li class="list__item col-left__list-item">Adobe Photoshop</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" id="languages">
+          <h2 class="section__title">Languages</h2>
+          <div class="section__cont">
+            <ul class="list">
+              <li class="list__item col-left__list-item">English - <i>Basic</i></li>
+              <li class="list__item col-left__list-item">Russian - <i>Native</i></li>
+              <li class="list__item col-left__list-item">Polish - <i>Intermediate</i></li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="col-right">
+
+        <section class="section" id="profile">
+          <h1 class="name-title">Dzmitry Sudalenka</h1>
+          <div class="job-title">Junior Front-end Developer</div>
+        </section>
+
+        <section class="section" id="summary">
+          <h2 class="section__title col-right__section-title">Summary</h2>
+          <div class="section__cont">
+            <p>Hi! I’m a junior frontend developer and have been in the industry for more than 5 years.</p>
+            <p>I have a keen eye for detail and most of my working life has been dedicated to creating stunning websites for clients.</p>
+          </div>
+        </section>
+
+        <section class="section" id="code">
+          <h2 class="section__title col-right__section-title">Code</h2>
+          <div class="section__cont">
+            <pre class="code__wrap">
+              <code class="code">
+<span class="code--purple">function</span> <span class="code--green">squareDigits</span><span class="code--yellow">(</span><span class="code--red">num</span><span class="code--yellow">)</span> <span class="code--yellow">{</span>
+
+  <span class="code--purple">let</span> <span class="code--red">result</span> <span class="code--yellow">=</span> <span class="code--red">num</span>
+    <span class="code--yellow">.</span><span class="code--green">toString</span><span class="code--yellow">()</span>
+    <span class="code--yellow">.</span><span class="code--green">split</span><span class="code--yellow">(</span><span class="code--red">''</span><span class="code--yellow">)</span>
+    <span class="code--yellow">.</span><span class="code--green">map</span><span class="code--yellow">(</span><span class="code--red">num</span> <span class="code--yellow">=></span> <span class="code--green">parseInt</span><span class="code--yellow">(</span><span class="code--red">num</span><span class="code--yellow">))</span>
+    <span class="code--yellow">.</span><span class="code--green">map</span><span class="code--yellow">(</span><span class="code--red">num</span> <span class="code--yellow">=></span> <span class="code--red">num</span> <span class="code--yellow">*</span> <span class="code--red">num</span><span class="code--yellow">)</span>
+    <span class="code--yellow">.</span><span class="code--green">join</span><span class="code--yellow">(</span><span class="code--red">''</span><span class="code--yellow">);</span>
+
+  <span class="code--purple">return</span> <span class="code--green">parseInt</span><span class="code--yellow">(</span><span class="code--red">result</span><span class="code--yellow">);</span>
+<span class="code--yellow">}</span>
+              </code>
+            </pre>
+          </div>
+        </section>
+
+        <section class="section" id="employment">
+          <h2 class="section__title col-right__section-title">Employment</h2>
+          <div class="section__cont">
+            <ul class="list">
+              <li class="list__item col-right__list-item">
+                <i>May 2014 — March 2020</i> <span class="tab"><b>Web Studio «16kb.by»</b></span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" id="education">
+          <h2 class="section__title col-right__section-title">Education</h2>
+          <div class="section__cont">
+            <ul class="list">
+              <li class="list__item col-right__list-item">
+                <span class="list__year">2011</span> <span class="tab"><b>Bialystok University of Technology</b></span><br>
+                <span class="edu-indent"><i>Faculty of Computer Science</i></span><br>
+                <span class="edu-indent">Incomplete higher education</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" id="courses">
+          <h2 class="section__title col-right__section-title">Courses</h2>
+          <div class="section__cont">
+            <ul>
+              <li class="list__item col-right__list-item">
+                <span class="list__year">2020</span> <span class="tab"><b>IBA Group</b></span>, React
+               </li>
+              <li class="list__item col-right__list-item">
+                <span class="list__year">2016</span> <span class="tab"><b>EPAM training center</b></span>, Java
+               </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <h2 class="section__title col-right__section-title">Projects</h2>
+          <div class="section__cont">
+            <ul>
+              <li class="list__item col-right__list-item">
+                <a class="col-right__link" href="https://github.com/DzmitrySudalenka/movie-app" target="_blank">movie-app</a>
+              </li>
+              <li class="list__item col-right__list-item">
+                <a class="col-right__link" href="https://github.com/DzmitrySudalenka/star-db" target="_blank">star-db</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class = "footer">
+    <div class="container footer__container">
+      <div class="copyright">
+        © 2022
+      </div>
+      <a href="https://github.com/DzmitrySudalenka" target="_blank"><i class="fa-brands fa-square-github github-icon"></i></a>
+      <a href="https://rs.school/js/" target="_blank">
+        <img src="images/logo-rs.png" alt="The Rolling Scopes School" width="100" height="84">
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/80ab7dcc08.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

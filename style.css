@@ -1,23 +1,307 @@
+:root {
+  --gray: #212428;
+  --red: #f73f7b;
+  --light: #c4cfde;
+  --header-bg: #f76695;
+  --right-col-bg: #edf0f5;
+  --code-bg: #343d46;
+  --code-default: #ffffff;
+  --code-purple: #c695c6;
+  --code-green: #99c794;
+  --code-red: #ec5a61;
+  --code-yellow: #f9ae58;
+}
+
 html {
-  box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth; 
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+ul {
   margin: 0;
   padding: 0;
-  font-weight: normal;
 }
 
-ol, ul {
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 50px 0 0 0;
+  
+  font-family: 'Montserrat', sans-serif;
+  
+  background-color: var(--gray);
+}
+
+a {
+  text-decoration: none;
+  
+  transition: .3s;
+}
+
+ul {
   list-style: none;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  
+  width: 100%;
+  
+  background-color: var(--gray);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main__container {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__link {
+  padding: 0 20px;
+  
+  line-height: 50px;
+  color: var(--light);
+}
+
+.nav__link:hover {
+  color: var(--red);
+}
+
+.section {
+  padding-top: 50px;
+}
+
+.section__cont {
+  margin-top: 30px;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 600;
+  
+  border-bottom: 3px solid var(--red);
+}
+
+.col-right__section-title {
+  position: relative;
+  z-index: 0;
+  
+  display: inline-block;
+  
+  border-bottom: none;
+}
+
+.col-right__section-title:before {
+  content: '';
+  
+  position: absolute;
+  z-index: -1;
+  left: -30px;
+  top: 30px;
+  
+  display: block;
+  width: 100%;
+  height: 30px;
+  
+  background-color: var(--header-bg);
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 22px;
+  margin-right: 20px;
+  
+  font-size: 24px;
+  text-align: center;
+  color: var(--red);
+}
+
+.contacts__link {
+  color: var(--light);
+  text-decoration: none;
+  
+  transition: .3s;
+}
+
+.contacts__link:hover {
+  color: var(--red);
+}
+
+.list__item {
+  margin: 15px 0;
+}
+
+.list__item:before,
+.list__item:after {
+  font-family: 'Source Code Pro', monospace;
+  color: var(--red);
+}
+
+.list__item:before {
+  content: "<";
+}
+
+.list__item:after {
+  content: ">";
+}
+
+.col-left__list-item:before {
+  margin-right: 5px;
+}
+
+.col-left__list-item:after {
+  margin-left: 5px;
+}
+
+.col-right__list-item:before,
+.col-right__list-item:after {
+  font-weight: 600;
+}
+
+.col-right__link {
+  color: var(--gray);
+}
+
+.col-right__link:hover {
+  color: var(--red);
+}
+
+.code__wrap {
+  padding: 20px 20px 0;
+  
+  background-color: var(--code-bg);
+  border-radius: 20px;
+}
+
+.code {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  color: var(--code-default);
+}
+
+.code--purple {
+  color: var(--code-purple);
+}
+
+.code--green {
+  color: var(--code-green);
+}
+
+.code--red {
+  color: var(--code-red);
+}
+
+.code--yellow {
+  color: var(--code-yellow);
+}
+
+.tab {
+  margin-left: 50px;
+}
+
+.edu-indent {
+  margin-left: 130px;
+}
+
+.list__year {
+  display: inline-block;
+  min-width: 55px;
+  
+  font-style: italic;
+}
+
+.name-title {
+  font-size: 70px;
+  font-weight: 600;
+  
+  color: var(--gray);
+}
+
+.job-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--red);
+}
+
+.photo__wrap {
+  display: flex;
+  width: 310px;
+  padding: 5px;
+  
+  border-radius: 50%;
+  background: linear-gradient(to bottom, var(--light), var(--red));
+}
+
+.photo {
+  border-radius: 50%;
+}
+
+.col-left {
+  color: var(--light);
+}
+
+.col-right {
+  margin-left: 50px;
+  padding: 0px 50px 50px;
+  
+  color: var(--gray);
+  
+  background-color: var(--right-col-bg);
+  border-radius: 20px;
+}
+
+.col-right .section__cont {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.copyright {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 22px;
+  color: var(--light);
+}
+
+.github-icon {
+  font-size: 70px;
+  position: relative;
+  color: var(--red);
 }
