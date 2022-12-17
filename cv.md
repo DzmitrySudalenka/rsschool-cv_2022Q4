@@ -5,7 +5,7 @@
 
 ### Contact information:
 
-**Phone:** &emsp;&emsp;&nbsp; +37444774577  
+**Phone:** &emsp;&emsp;&nbsp; +375444774577  
 **E-mail:** &emsp;&emsp;&nbsp; sudalneko@gmail.com  
 **Telegram:** &emsp; @sudalenko  
 [LinkedIn](https://www.linkedin.com/in/dzmitry-sudalenka/)  
