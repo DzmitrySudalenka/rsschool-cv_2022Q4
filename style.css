@@ -133,6 +133,37 @@ img {
   background-color: var(--header-bg);
 }
 
+.section-name {
+  display: flex;
+}
+
+.save {
+  display: flex;
+  flex-grow: 1;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.save__link {
+  padding: 10px;
+  
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--red);
+  
+  border: 3px solid var(--red);
+  border-radius: 5px;
+}
+
+.save__link:hover {
+  box-shadow: 0 0 10px var(--red);
+}
+
+.save__label {
+  margin-left: 10px;
+}
+
 .contacts__item {
   display: flex;
   align-items: center;
